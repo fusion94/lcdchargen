@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Custom Character Generator for HD44780 LCD Modules</title>
+<title>Custom Character Generator for 16x2 LCD Modules</title>
 <style type="text/css">
 
 body {
@@ -54,7 +54,7 @@ pre {
 
 </style>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>
 
   // Create a 2D array for the custom char
@@ -156,7 +156,7 @@ pre {
 </head>
 
 <body>
-<h1>Custom Character Generator<br />for HD44780 LCD Modules</h1>
+<h1>Custom Character Generator<br />for 16x2 LCD Modules</h1>
 <span>Click pixels to generate output.</span>
 
 <div id="wrapper">
@@ -239,7 +239,7 @@ byte customChar[8] = {
 #include &lt;LiquidCrystal.h&gt;
 
 // initialize the library
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(8, 9, 4, 5, 6, 7); 
 </pre>
 
 <pre class="output">
